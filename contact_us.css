@@ -1,0 +1,160 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #f1f1f1;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: wheat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content{
+    font-size: 30px;
+    
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px;
+}
+
+/* Container for contact info and form */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Contact Info Section */
+.contactInfo {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfo .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contactInfo .icon {
+    font-size: 30px;
+    color: #2575fc;
+    margin-right: 15px;
+}
+
+.contactInfo .text h2 {
+    font-size: 20px;
+    color: #2575fc;
+    margin-bottom: 5px;
+}
+
+.contactInfo .text p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Contact Form Section */
+.contact-form-container {
+    width: 50%;
+    padding: 30px;
+    background: linear-gradient(135deg, #eaa512, #ed2a08); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form-card h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Input Box Styling */
+.contact-form-card .inputBox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Input Fields & Textarea Styling */
+.contact-form-card .inputBox input,
+.contact-form-card .inputBox textarea {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Textarea Specific */
+.contact-form-card .inputBox textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+/* Label Styling */
+.contact-form-card .inputBox label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* Focus Effect on Input Fields */
+.contact-form-card .inputBox input:focus,
+.contact-form-card .inputBox textarea:focus {
+    border-bottom: 2px solid #2575fc;
+}
+
+/* Label Movement on Focus */
+.contact-form-card .inputBox input:focus ~ label,
+.contact-form-card .inputBox textarea:focus ~ label,
+.contact-form-card .inputBox input:valid ~ label,
+.contact-form-card .inputBox textarea:valid ~ label {
+    top: -20px;
+    font-size: 12px;
+    color: #2575fc;
+}
+
+/* Submit Button Styling */
+.contact-form-card .inputBox input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+   
+}
